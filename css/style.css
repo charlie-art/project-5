@@ -3,8 +3,8 @@ padding: px;
 }
 
 .container {
-display: flex;
-flex-direction: column;
+    max-width: 800px;
+    display: grid;
 }
 
 .container img {
@@ -27,8 +27,8 @@ input:placeholder {
 
  @media screen and (min-width: 768px) {
      .container {
-         flex-direction: row;
-         flex-wrap: wrap;
+         min-width: 768px;
+         display: grid;
      }
 
      .container img {
@@ -37,9 +37,8 @@ input:placeholder {
      }
 
      .container a {
-         width: 47%;
-         text-align: center;
-         justify-content: space-between;
+       max-width: 768px;
+       display: grid;
      }
          .input-div {
              margin:auto;
@@ -48,7 +47,8 @@ input:placeholder {
 
      @media screen and (min-width: 1024px) {
         .container a {
-            max-width: 1358px;
+            min-width: 1358px;
+            display: grid;
         }
 
         .container a {
