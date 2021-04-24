@@ -1,5 +1,5 @@
-let searchBox = document.querySelector('#search');
-let pictures = docment.querySelectorAll('a');
+let searchBox = document.querySelector("#search");
+let pictures = docment.querySelectorAll("a");
 
 searchBox.addEventListner("keyup", (event) => {
 
