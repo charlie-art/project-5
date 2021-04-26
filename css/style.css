@@ -4,26 +4,27 @@
   display: grid;
   grid-gap: 200px;
   grid-template-columns: 30px 30px 30px 30px;
-  grid-template-rows: 20px 20px 20px;
+  grid-template-rows: 20px 20px 20px 20px;
 }
 
 
 
-input {
+.input {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 25px;
 }
 
-input:placeholder {
+.input:placeholder {
     font-size: 16px;
     
 }
 
  @media screen and (min-width: 768px) {
      .container {
-         max-width: 768px;
-         display: grid;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
      }
 
      .container img {
@@ -41,7 +42,7 @@ input:placeholder {
      }
 
      @media screen and (min-width: 1024px) {
-        body { max-width: 1024px;
+        body { min-width: 1024px;
             margin: auto;
     
 
