@@ -1,13 +1,15 @@
-
+.searchbox {
+   margin-right: 200px;
+    display: flex;
+    justify-content: center;
+}
 
 .gallery {
   display: grid;
-  grid-gap: 200px;
-  grid-template-columns: 30px 30px 30px 30px;
-  grid-template-rows: 20px 20px 20px 20px;
+  grid-gap: 40px;
+  grid-template-columns: 180px 180px 180px 180px;
+  grid-template-rows: 180px 180px 180px 180px;
 }
-
-
 
 .input {
     width: 100%;
@@ -42,14 +44,14 @@
      }
 
      @media screen and (min-width: 1024px) {
-        body { min-width: 1024px;
+        body { max-width: 1024px;
             margin: auto;
     
 
         }
 
         .container a {
-            max-width: 1024px;
+            min-width: 1024px;
             display: grid;
         }
 
@@ -58,5 +60,4 @@
         }
 
         
-
- }
+    }
